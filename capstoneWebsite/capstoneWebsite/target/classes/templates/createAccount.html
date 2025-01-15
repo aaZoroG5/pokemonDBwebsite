@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sign Up Page</title>
+    <link rel="stylesheet" href="C:\Users\Andy\VSProjects\HTML_SBA\styles\createAccountStyle.css">
+    <link rel="icon" type="image/x-icon" href="C:\Users\Andy\Pictures\Screenshots\pikachuFavicon.png">
+</head>
+<body>
+    <header>
+        <h1>SIGN UP TODAY AND SHARE YOUR FAVORITE POKEMON</h1>
+    </header>
+    <div>
+        <nav class="navbar">
+        <ul>
+            <li class="nav-item">
+                <a href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a href="pokedex.html">Pokedex</a>
+            </li>
+            <li class="nav-item">
+                <a href="types.html">Types</a>
+            </li>
+            <li class="nav-item">
+                <a href="createAccount.html">Community</a>
+            </li>
+            <li class="dropdown">
+                <button>Games</button>
+                <ul class="menu">
+                    <li><a class="item" href="https://www.serebii.net/pokearth/kanto/">Generation 1</a></li>
+                    <li><a class="item" href="#Gen2">Generation 2</a></li>
+                    <li><a class="item" href="#Gen3">Generation 3</a></li>
+                    <!--<li><hr class="dropdown-divider"></li>-->
+                    <li><a class="item" href="#Gen4">Generation 4</a></li>
+                </ul>
+            </li>
+        </ul>
+        </nav>
+    </div>
+    <main>
+    <form action="#">
+        <label for="userName">User Name
+            <input type="text" name="userName" id="userName" pattern="[A-Za-z]{3,20}" title="20 Characters" required /> <!--fix regex-->
+
+        </label>
+        <br>
+        <label for="email">Email
+            <input type="email" name="email" id="email" required />
+        </label>
+        <br>
+        <label for="password">Password
+            <input type="password" name="password" id="password" required/>
+        </label>
+        <br>
+        <label for="create"> <!--changed "submit" to "create" -->
+            <input type="submit" name="create" id="create" value="Create Account" required/>
+        </label>
+    </form>
+    <div style="text-align: center;">
+        <a href="https://pokemondb.net/pokedex/breloom"><img src="https://img.pokemondb.net/sprites/scarlet-violet/normal/breloom.png" alt="Breloom"></a>
+    </div>
+    </main>
+</body>
+</html>

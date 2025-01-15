@@ -1,0 +1,67 @@
+body{
+    background-color: #32373B;
+}
+label{
+    color:antiquewhite;
+}
+header{
+    text-align: center;
+    color: #ffc15e;
+}
+form{
+    text-align: center;
+}
+input{
+    width: 50%;
+    padding: 10px 30px; /*this changes size of the whitespace*/
+    margin:5px 0px; /*this changes the space between the text boxes*/
+    border-radius: 20px;
+    box-sizing:border-box; /*https://www.w3schools.com/css/css3_box-sizing.asp*/
+}
+input:focus{
+    border: 3px solid #ffc15e;
+} /*figure out how to style each input individually because the "input[type=]" format didnt work*/
+
+
+.navbar ul {
+    list-style-type: none;
+    background-color:#32373B;
+    padding:0px;
+    margin:auto; /*set margin to auto, in order to center the navbar*/
+    overflow: hidden;
+    align-content: center;
+}
+.navbar a{
+    color:white;
+    text-decoration: none;
+    padding:15px;
+    display:block;
+}
+.navbar a:hover {
+    background-color: #555d64;
+    border-radius: 20px; /*this reduces the edges of the selection box*/
+}
+.navbar li{
+    float:left;
+}
+.dropdown button{
+  background-color: #32373B;
+  padding: 15px;
+  color:antiquewhite;
+  border:none;
+  cursor: pointer;
+}
+button:hover{
+  background-color: #555d64;
+  border-radius: 20px;
+}
+.dropdown .menu{
+  display: none; /*this hides all the items in the menu*/
+  position:fixed; /*this places the items directly under the button instead of the rest of the web contents*/
+  background-color: hsl(207, 8%, 49%);
+  width: 123px;
+}
+.dropdown:hover .menu{
+  display: block;
+  border-radius: 20px; /*this rounds the corners of the dropdown container box*/
+}

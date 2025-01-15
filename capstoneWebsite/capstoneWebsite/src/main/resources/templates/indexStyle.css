@@ -1,0 +1,75 @@
+body{
+    background-color:#ffc15e;
+    height: 2000px;
+}
+.secondBackground{
+  background-color: #32373B;
+}
+header {
+    text-align: center;
+    color: #32373B;
+}
+
+
+.navbar ul {
+    list-style-type: none;
+    background-color:#32373B;
+    padding:0px;
+    margin:auto; /*set margin to auto, in order to center the navbar*/
+    overflow: hidden;
+    align-content: center;
+}
+.navbar a{
+    color:white;
+    text-decoration: none;
+    padding:15px;
+    display:block;
+}
+.navbar a:hover {
+    background-color: #555d64;
+    border-radius: 20px; /*this reduces the edges of the selection box*/
+}
+.navbar li{
+    float:left;
+}
+.dropdown button{
+  background-color: #32373B;
+  padding: 15px;
+  color:antiquewhite;
+  border:none;
+  cursor: pointer;
+}
+button:hover{
+  background-color: #555d64;
+  border-radius: 20px;
+}
+.dropdown .menu{
+  display: none; /*this hides all the items in the menu*/
+  position:fixed; /*this places the items directly under the button instead of the rest of the web contents*/
+  background-color: hsl(207, 8%, 49%);
+  width: 123px;
+}
+.dropdown:hover .menu{
+  display: block;
+  border-radius: 20px; /*this rounds the corners of the dropdown container box*/
+}
+main > section > p {
+    color:hsla(120, 92%, 46%, 0.302)
+}
+img {
+    border:100px #32373B; /*fix the color of the border*/
+    margin:25px;
+    border-radius: 10px;
+}
+main > section > a > img.rotate:hover{ /*fix the pokeball and make it spin when mouse is hovering*/
+    transform: rotate(360deg)
+}
+td{
+  border: 5px solid black;
+  width: 150px;
+  height: 150px;
+}
+table{
+  text-align: center;
+  border-collapse: collapse;
+  margin:auto;

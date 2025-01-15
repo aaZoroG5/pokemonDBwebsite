@@ -1,0 +1,42 @@
+.navbar ul {
+    list-style-type: none;
+    background-color:#32373B;
+    padding:0px;
+    margin:auto; /*set margin to auto, in order to center the navbar*/
+    overflow: hidden;
+    align-content: center;
+}
+.navbar a{
+    color:white;
+    text-decoration: none;
+    padding:15px;
+    display:block;
+}
+.navbar a:hover {
+    background-color: #555d64;
+    border-radius: 20px; /*this reduces the edges of the selection box*/
+}
+.navbar li{
+    float:left;
+}
+.dropdown button{
+  background-color: #32373B;
+  padding: 15px;
+  color:antiquewhite;
+  border:none;
+  cursor: pointer;
+}
+button:hover{
+  background-color: #555d64;
+  border-radius: 20px;
+}
+.dropdown .menu{
+  display: none; /*this hides all the items in the menu*/
+  position:fixed; /*this places the items directly under the button instead of the rest of the web contents*/
+  background-color: hsl(207, 8%, 49%);
+  width: 123px;
+}
+.dropdown:hover .menu{
+  display: block;
+  border-radius: 20px; /*this rounds the corners of the dropdown container box*/
+}
